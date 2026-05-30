@@ -1,0 +1,151 @@
+:root {
+    --bg-principal: #000000;
+    --bg-secundario: #111111;
+    --bg-cards: #1A1A1A;
+    --texto-principal: #FFFFFF;
+    --texto-secundario: #888888;
+    --destaque: #E63946;
+    --destaque-claro: #FF6B6B;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--bg-principal);
+}
+
+h1 {
+    color: var(--destaque);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: var(--texto-principal);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    background-color: var(--bg-secundario);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: var(--destaque-claro);
+}
+
+
+#logo img {
+    height: 40px;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.menu-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.btn-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--bg-secundario);
+    color: var(--texto-principal);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 100px;
+    padding: 25px 15px;
+}
+
+.carousel {
+    max-width: 1900px;
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgb(121, 57, 57);
+}
+
+.carousel .carousel-item img {
+    height: 700px;        
+    object-fit: cover;    
+}
+
+ 
+
+.carousel-caption{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.apresentacao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--texto-principal);
+    text-align: center;
+    margin: 40px auto;
+}
+
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+}
+
+.destaques .card {
+    background-color: var(--bg-cards);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 5px 15px rgb(121, 57, 57);
+}
+
+.destaques .card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--destaque);
+    font-size: 20px;
+    padding: 15px;
+}
+
+.destaques .card p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto-principal);
+    padding: 0 15px 15px;
+}
+
+
+
