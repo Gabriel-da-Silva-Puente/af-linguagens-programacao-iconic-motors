@@ -118,12 +118,51 @@ a {
     margin: 40px auto;
 }
 
+.contato-apresentacao {
+    margin-top: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.galeria-apresentacao {
+    margin-top: 20px;    
+    justify-content: center;
+}
+
+
+
+.btn {
+    background-color: var(--destaque);
+    color: var(--texto-principal);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 11px 23px;
+}
+
+.btn:hover {
+    background-color: var(--destaque-claro);
+}
+
 .destaques {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 100px;
+    gap: 30px;
+    padding: 50px;
+    margin-left: 250px;    
+    margin-right: 250px;
+}
+
+.destaques1 {
+    margin-bottom: 25px;
+}
+
+.destaques img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .destaques .card {
@@ -146,6 +185,11 @@ a {
     color: var(--texto-principal);
     padding: 0 15px 15px;
 }
+
+
+
+
+
 
 
 
