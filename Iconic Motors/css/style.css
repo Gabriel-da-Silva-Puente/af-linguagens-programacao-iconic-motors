@@ -233,7 +233,7 @@ a {
     transition: transform 0.5s ease;
 }
 
-.card:hover .card img {
+.card:hover img {
     transform: scale(1.05);
 }
 
