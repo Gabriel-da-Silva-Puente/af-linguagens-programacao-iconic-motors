@@ -18,19 +18,38 @@ Professor: Abimael de Oliveira
 </head>
 <body>
 
-<header>
-    <nav class="menu">
-        <div id="logo">
-            <img src="./img/logo.png" alt="Iconic Motors Logo">
-        </div>
+    <header>
+        <nav class="menu">
 
-        <div class="menu-links">
-            <a href="index.html">Home</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contato.html">Contato</a>
+            <div id="logo">
+                <img src="./img/logo.png" alt="Iconic Motors Logo">
+            </div>
+
+           
+            
+            <div class="menu-links">
+                <ul class="lista-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-btn-menu">
+                <button class="button-menu" onclick="toggleMenu()"><img src="./img/menu.png" alt="Menu"></button>
+            </div>
+
+        </nav>
+
+        <div class="menu-links-mobile">
+            <ul class="lista-links">
+                <li class="mobile-link-item"><a href="index.html">Home</a></li>
+                <li class="mobile-link-item"><a href="galeria.html">Galeria</a></li>
+                <li class="mobile-link-item"><a href="contato.html">Contato</a></li>
+            </ul>
         </div>
-    </nav>
-</header>
+    
+    </header>
 
 <main>
 
@@ -84,9 +103,11 @@ Professor: Abimael de Oliveira
 </main>
 
 <footer class="footer">
-    <p>© 2026 Iconic Motors. Legends from street.</p>
-    <p>Designed by Gabriel e Guilherme.</p>
-</footer>
+        <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+        <p>Aluno 1: Gabriel da Silva Puente - RA: 252098</p>
+        <p>Aluno 2: Nome completo - RA: XXXXX</p>
+        <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+    </footer>
 
 <button id="btnTopo" class="btn-topo">↑</button>
 

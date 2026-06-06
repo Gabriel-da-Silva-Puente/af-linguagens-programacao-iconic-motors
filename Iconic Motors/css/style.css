@@ -55,12 +55,24 @@ a {
     align-items: center;
 }
 
-.menu a {
+.menu-links a {
     color: var(--texto-principal);
     text-decoration: none;
     margin-right: 15px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.menu-links-mobile a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.menu-links-mobile {
+    background-color: var(--bg-secundario);
+    padding: 20px;
 }
 
 .menu a:hover {
@@ -80,10 +92,32 @@ a {
     justify-content: flex-end;
 }
 
-.btn-menu {
-    display: none;
-    flex-direction: column;
+.lista-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-link-item {
+    margin: 5px 0;
+}
+
+.button-menu {
+    background: none;
+    border: none;
     cursor: pointer;
+}
+
+
+.mobile-btn-menu {
+    display: none;
+}
+
+.menu-links-mobile {
+    display: none;
 }
 
 .footer {
@@ -91,7 +125,7 @@ a {
     color: var(--texto-principal);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    height: 100px;
+    height: auto;
     padding: 25px 15px;
 }
 
@@ -159,8 +193,8 @@ a {
     justify-content: center;
     gap: 30px;
     padding: 50px;
-    margin-left: 250px;    
-    margin-right: 250px;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
 .destaques1 {
@@ -179,6 +213,7 @@ a {
     overflow: hidden;
     width: 300px;
     box-shadow: 0 5px 15px rgb(121, 57, 57);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destaques .card h3 {
@@ -192,6 +227,14 @@ a {
     font-family: 'Montserrat', sans-serif;
     color: var(--texto-principal);
     padding: 0 15px 15px;
+}
+
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card img {
+    transform: scale(1.05);
 }
 
 #formContato{
@@ -258,6 +301,148 @@ a {
 .btn-topo.mostrar {
     display: block;
 }
+
+.galeria-corpo {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.galeria-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-gl {
+    background-color: var(--bg-cards);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-gl:hover {
+    transform: scale(1.05);
+}
+
+.card-corpo {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-imagem {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-gl:hover .card-imagem {
+    transform: scale(1.05);
+}
+
+.card-titulo {
+    color: var(--destaque);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 15px 10px;
+    margin: 0;
+}
+
+.card-texto {
+    color: var(--texto-principal);
+    font-size: 0.9rem;
+    padding: 0 15px 20px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 992px) {
+
+    
+    .card-imagem {
+        height: 200px;
+    }
+    
+    .novidades h1, .Icones h1, .Lendas h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+    }
+    
+    .mobile-btn-menu {
+        display: block;
+    }
+    
+    .menu-links-mobile  ul{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .menu-links-mobile.open {
+        display: block;
+    }
+    
+    .card-imagem {
+        height: 180px;
+    }
+    
+    .card-titulo {
+        font-size: 1.1rem;
+        padding: 12px 12px 8px;
+    }
+    
+    .card-texto {
+        font-size: 0.85rem;
+        padding: 0 12px 15px;
+    }
+    
+    .novidades, .Icones, .Lendas {
+        margin-bottom: 40px;
+    }
+    
+    .novidades h1, .Icones h1, .Lendas h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 875px) {
+    .destaques {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px;
+        max-width: 98%;
+        margin: 0 auto;
+    }
+            
+}
+
+
 
 
 

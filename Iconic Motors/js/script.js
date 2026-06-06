@@ -54,3 +54,13 @@ if (btnTopo) {
         });
     });
 }
+
+
+function toggleMenu() {
+    let menuLinks = document.querySelector('.menu-links-mobile');
+    if (menuLinks.classList.contains('open')) {
+        menuLinks.classList.remove('open');
+    } else {
+        menuLinks.classList.add('open');
+    }
+}
